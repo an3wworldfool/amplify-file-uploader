@@ -33,5 +33,18 @@
     "tsx": "^4.7.2",
     "typescript": "^5.4.5",
     "vite": "^5.2.0"
-  }
+  },
+  "description": "This repository provides a starter template for creating applications using React+Vite and AWS Amplify, emphasizing easy setup for authentication, API, and database capabilities.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/an3wworldfool/amplify-vite-react-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/an3wworldfool/amplify-vite-react-template/issues"
+  },
+  "homepage": "https://github.com/an3wworldfool/amplify-vite-react-template#readme"
 }
