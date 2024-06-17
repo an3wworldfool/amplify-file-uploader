@@ -2,6 +2,8 @@
 
 An Image uploader made using AWS Amplify, using both the UI components and the backend provisioning: auth/cognito and storage/s3.
 
+Front end built using React + Amplify's @aws-amplify/ui-react component library.
+
 ## How it works
 
 It lets an authenticated user to upload images to an S3 bucket. It also limits the access to the owner of the images.
