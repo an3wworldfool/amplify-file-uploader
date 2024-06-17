@@ -1,25 +1,20 @@
-## AWS Amplify React+Vite Starter Template
+# Amplify Image Uploader
 
-This repository provides a starter template for creating applications using React+Vite and AWS Amplify, emphasizing easy setup for authentication, API, and database capabilities.
+An Image uploader made using AWS Amplify, using both the UI components and the backend provisioning: auth/cognito and storage/s3.
 
-## Overview
+## What does it do
 
-This template equips you with a foundational React application integrated with AWS Amplify, streamlined for scalability and performance. It is ideal for developers looking to jumpstart their project with pre-configured AWS services like Cognito, AppSync, and DynamoDB.
+It lets an authenticated user to upload images to an S3 bucket. It also limits the access to the owner of the images.
 
-## Features
+![gif of the code running](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjhqbGtoNmJyZjRuY3IyODBka3FxeGFnNDQ5YnZrcW1mcnl4NGFmMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3cZIn3ibOVQJZcbSCV/giphy.gif)
 
-- **Authentication**: Setup with Amazon Cognito for secure user authentication.
-- **API**: Ready-to-use GraphQL endpoint with AWS AppSync.
-- **Database**: Real-time database powered by Amazon DynamoDB.
+## TODO
+- ~~Auth~~
+- ~~Upload to S3~~
+- ~~Display Images~~
+- Delete Images
+- Download Images
+- Fix the CSS
 
-## Deploying to AWS
 
-For detailed instructions on deploying your application, refer to the [deployment section](https://docs.amplify.aws/react/start/quickstart/#deploy-a-fullstack-app-to-aws) of our documentation.
 
-## Security
-
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
-
-## License
-
-This library is licensed under the MIT-0 License. See the LICENSE file.
