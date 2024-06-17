@@ -1,26 +1,35 @@
-import { useEffect, useState } from "react";
+//import { useEffect, useState } from "react";
 import { Authenticator } from '@aws-amplify/ui-react'
-import '@aws-amplify/ui-react/styles.css'
-import { ImageUploader } from "./assets/pages/upload/UploadImage";
-
+import { ImageUploader } from "./assets/components/UploadImage";
+import { Outlet, Link } from "react-router-dom";
+import './App.css'
 function App() {
 
 
   return (
-        
+
     <Authenticator>
       {({ signOut, user }) => (
-              
-    <main>
-      <h1>Image Gallery</h1>
-      <h1>Hello {user?.username}</h1>
-      <ImageUploader />
-      
-      <button onClick={signOut}>Sign out</button>
-    </main>
-        
+
+        <main className='header'>
+          <h1>Image Drive</h1>
+          <ul className='nav'>
+            <li>
+              <Link to={`upload`}>Upload Images</Link>
+            </li>
+            <li>
+              <Link to={`gallery`}>View Images</Link>
+            </li>
+            <li>
+            <button onClick={signOut}>Sign out</button>
+            </li>
+          </ul>
+          <Outlet />
+          
+        </main>
+
       )}
-      </Authenticator>
+    </Authenticator>
   );
 }
 
